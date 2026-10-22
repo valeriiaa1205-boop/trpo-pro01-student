@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #f4f6fb;
+    color: #202938;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: #315efb;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #93b4ff;
+    outline-offset: 3px;
+}
+
+.container {
+    width: min(1100px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+.site-header {
+    background: #111827;
+    color: white;
+}
+
+.header-inner {
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.logo {
+    width: 42px;
+    height: 42px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    margin-top: 34px;
+    padding: 38px;
+    background: white;
+    border: 1px solid #dce1ea;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1 1 55%;
+}
+
+.hero-image {
+    width: min(330px, 38%);
+}
+
+.pill,
+.card-category,
+.eyebrow {
+    display: inline-block;
+    color: #315efb;
+    background: #e9efff;
+    border-radius: 999px;
+    padding: 6px 11px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.eyebrow {
+    background: transparent;
+    padding: 0;
+    letter-spacing: .08em;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(30px, 5vw, 48px);
+    margin: 18px 0 14px;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 8px 0;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 14px 0 8px;
+}
+
+.hero p,
+.section-heading p {
+    color: #687386;
+}
+
+.button {
+    display: inline-block;
+    border: 0;
+    border-radius: 10px;
+    background: #315efb;
+    color: white;
+    padding: 11px 17px;
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #244bd1;
+}
+
+.section {
+    padding-top: 56px;
+    scroll-margin-top: 20px;
+}
+
+.section-heading {
+    margin-bottom: 22px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.card {
+    flex: 1 1 30%;
+    min-width: 250px;
+    padding: 22px;
+    background: white;
+    border: 1px solid #dce1ea;
+    border-radius: 14px;
+}
+
+.card p {
+    color: #687386;
+    min-height: 48px;
+}
+
+.card strong {
+    display: block;
+    margin-top: 14px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    background: white;
+    border: 1px solid #dce1ea;
+    border-radius: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    text-align: left;
+    padding: 18px;
+    font-weight: 700;
+}
+
+th,
+td {
+    padding: 14px 18px;
+    text-align: left;
+    border-top: 1px solid #e5e7eb;
+}
+
+th {
+    background: #f8f9fc;
+}
+
+.signup-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 26px;
+    background: white;
+    border: 1px solid #dce1ea;
+    border-radius: 14px;
+}
+
+.form-group {
+    flex: 1 1 calc(50% - 18px);
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group-full {
+    flex-basis: 100%;
+}
+
+label {
+    font-weight: 700;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #cbd2df;
+    border-radius: 9px;
+    padding: 11px 12px;
+    font: inherit;
+    background: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.site-footer {
+    margin-top: 70px;
+    padding: 28px 0;
+    background: #111827;
+    color: #dbe2ef;
+}
+
+@media (max-width: 760px) {
+    .container {
+        width: min(100% - 28px, 1100px);
+    }
+
+    .header-inner {
+        padding: 16px 0;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    .hero {
+        margin-top: 20px;
+        padding: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .card {
+        flex-basis: 100%;
+        min-width: 0;
+    }
+
+    .form-group {
+        flex-basis: 100%;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+}

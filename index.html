@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Технологии разработки ПО — Практическая работа 1</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="logo-link" href="#about">
+            <img src="images/logo.svg" alt="Логотип учебного проекта" class="logo">
+            <span>Технологии разработки ПО</span>
+        </a>
+
+        <nav aria-label="Основная навигация">
+            <a href="#about">О курсе</a>
+            <a href="#tracks">Направления</a>
+            <a href="#schedule">Расписание</a>
+            <a href="#signup">Регистрация</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero container" id="about">
+        <div class="hero-content">
+            <span class="pill">Практическая работа №1</span>
+            <h1>HTML и CSS: основы frontend-разработки</h1>
+            <p>
+                Информационная страница по данным dataset. Здесь собраны основные
+                темы практической работы, показатели и форма обратной связи.
+            </p>
+            <a class="button" href="#tracks">Перейти к направлениям</a>
+        </div>
+
+        <img src="images/cover.svg"
+             alt="Иллюстрация к практической работе"
+             class="hero-image">
+    </section>
+
+    <section class="section container" id="tracks">
+        <div class="section-heading">
+            <span class="eyebrow">DATASET</span>
+            <h2>Направления</h2>
+            <p>Шесть элементов из файла content.csv.</p>
+        </div>
+
+        <div class="cards">
+            <article class="card">
+                <span class="card-category">Основа</span>
+                <h3>HTML</h3>
+                <p>Структура и семантика документа</p>
+                <strong>Оценка: 8/10</strong>
+            </article>
+
+            <article class="card">
+                <span class="card-category">Оформление</span>
+                <h3>CSS</h3>
+                <p>Стили и адаптивность</p>
+                <strong>Оценка: 9/10</strong>
+            </article>
+
+            <article class="card">
+                <span class="card-category">Инструменты</span>
+                <h3>Git</h3>
+                <p>История изменений</p>
+                <strong>Оценка: 7/10</strong>
+            </article>
+
+            <article class="card">
+                <span class="card-category">HTML</span>
+                <h3>Forms</h3>
+                <p>Пользовательский ввод</p>
+                <strong>Оценка: 6/10</strong>
+            </article>
+
+            <article class="card">
+                <span class="card-category">Качество</span>
+                <h3>Accessibility</h3>
+                <p>Доступность интерфейса</p>
+                <strong>Оценка: 10/10</strong>
+            </article>
+
+            <article class="card">
+                <span class="card-category">Проверка</span>
+                <h3>DevTools</h3>
+                <p>Исследование DOM и стилей</p>
+                <strong>Оценка: 8/10</strong>
+            </article>
+        </div>
+    </section>
+
+    <section class="section container" id="schedule">
+        <div class="section-heading">
+            <span class="eyebrow">ПЛАН</span>
+            <h2>Расписание изучения</h2>
+            <p>Темы и категории взяты из content.csv.</p>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <caption>План занятий по основным темам</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Время</th>
+                        <th scope="col">Тема</th>
+                        <th scope="col">Категория</th>
+                        <th scope="col">Баллы</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00</td>
+                        <td>HTML</td>
+                        <td>Основа</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                        <td>CSS</td>
+                        <td>Оформление</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>11:00</td>
+                        <td>Git</td>
+                        <td>Инструменты</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                        <td>Forms</td>
+                        <td>HTML</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>13:00</td>
+                        <td>Accessibility</td>
+                        <td>Качество</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>14:00</td>
+                        <td>DevTools</td>
+                        <td>Проверка</td>
+                        <td>8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="section container" id="signup">
+        <div class="section-heading">
+            <span class="eyebrow">ОБРАТНАЯ СВЯЗЬ</span>
+            <h2>Регистрация</h2>
+            <p>Заполни форму, чтобы оставить заявку на изучение курса.</p>
+        </div>
+
+        <form class="signup-form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Имя</label>
+                <input id="name" name="name" type="text"
+                       required minlength="2" maxlength="50"
+                       placeholder="Введите имя">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email"
+                       required placeholder="example@mail.ru">
+            </div>
+
+            <div class="form-group">
+                <label for="topic">Интересующая тема</label>
+                <select id="topic" name="topic" required>
+                    <option value="">Выберите тему</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="git">Git</option>
+                    <option value="forms">Forms</option>
+                    <option value="accessibility">Accessibility</option>
+                    <option value="devtools">DevTools</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="hours">Количество часов в неделю</label>
+                <input id="hours" name="hours" type="number"
+                       min="1" max="40" required>
+            </div>
+
+            <div class="form-group form-group-full">
+                <label for="message">Комментарий</label>
+                <textarea id="message" name="message"
+                          minlength="10" maxlength="500"
+                          rows="5" placeholder="Напишите несколько слов..."></textarea>
+            </div>
+
+            <button class="button" type="submit">Отправить заявку</button>
+        </form>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>Практическая работа №1 · Технологии разработки программного обеспечения</p>
+    </div>
+</footer>
+
+</body>
+</html>
